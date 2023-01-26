@@ -1,0 +1,581 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./styles.css" rel="stylesheet">
+
+
+
+
+    <!-- SITE TITLE -->
+    <title>4PTO Venture Labs</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../public/fonts/ClashDisplay-Regular.ttf') format('woff2'),
+       url('../public/fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('../public/fonts/ClashDisplay-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../public/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('../public/fonts/ClashDisplay-Semibold.woff') format('woff'),
+       url('../public/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+</style>
+<body>
+    <div id="page">
+
+        <nav id="navWrapper" class="px-4 lg:px-12 py-4 md:py-14 fixed max-w-screen z-10 inset-x-0 top-0 flex justify-end items-center">
+
+            <button id="mobileMenuButton" class="p-3 focus:outline-none md:hidden" title="Open side menu">
+                <svg id="mobileMenuButtonClose" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                <svg id="mobileMenuButtonOpen" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <div id="sideMenuHideOnMobile" class="bg-gradient-radial from-darkblue to-black flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
+                                                  w-full md:w-auto
+                                                  h-screen md:h-auto
+                                                  px-4 md:px-12
+                                                  md:py-10
+                                                  flex-col justify-around items-center
+                                                  md:flex-row md:justify-end
+                                                  -translate-y-full md:translate-y-0
+                                                 md:items-center">
+                <a href="#services"  class="navlink text-base font-clash uppercase transition-all duration-500 text-white md:px-4 lg:px-1 xl:px-4 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+                before:bottom-0 before:left-0 before:bg-white
+                before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+                before:transition before:ease-in-out before:duration-300 ">services</a>
+                <a href="#products" class="navlink text-base font-clash uppercase transition-all duration-500 text-white md:px-4 lg:px-1 xl:px-4 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+                before:bottom-0 before:left-0 before:bg-white
+                before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+                before:transition before:ease-in-out before:duration-300">products</a>
+                <a href="#technologies" class="navlink text-base font-clash uppercase transition-all duration-500 text-white md:px-4 lg:px-1 xl:px-4 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+                before:bottom-0 before:left-0 before:bg-white
+                before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+                before:transition before:ease-in-out before:duration-300">technologies</a>
+                <a href="#case-studies" class="navlink text-base font-clash uppercase transition-all duration-500 text-white md:px-4 lg:px-1 xl:px-4 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+                before:bottom-0 before:left-0 before:bg-white
+                before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+                before:transition before:ease-in-out before:duration-300">case studies</a>
+            </div>
+
+        </nav>
+
+
+        <section id="hero" class="bg-cover px-6 md:py-44 md:px-14 lg:px-44 lg:py-44 py-24 bg-no-repeat bg-[url('./images/hero-sm.png')] lg:bg-[url('./images/Hero-bg.png')]">   
+            <img src="./images/logo.png" class="w-36 lg:w-64 lg:ml-20 xl:ml-36" />
+            <div class="flex flex-col justify-around items-center py-8 text-center w-full md:w-1/2 lg:w-2/3 mx-auto pt-44">
+                <h1 class="font-clashbold text-lg lg:text-xl text-white py-12">
+                    Web3 projects from 0 to 0xhero
+                </h1>
+                <p class="font-clash text-white text-base xl:text-lg pb-36">
+                    We empower creators like you to build world-class technology. We cater to the needs of your startup from early stage to fully-fledged product.
+                </p>
+                <p class="font-clashbold text-white text-base lg:text-lg lg:pt-36">
+                    Our passion is being the tech driving force behind your new WEB3 project
+                </p>
+            </div>   
+        </section>
+
+        <section id="services" class="bg-white px-6 lg:px-32 bg-contain bg-no-repeat bg-center bg-top" style="background-image: url('./images/bg-1.png');" >
+            <h1 class="font-clashbold text-lg lg:text-xl text-text text-center pt-32">Services</h1>
+            <div class="flex flex-col justify-around items-center pt-8">
+                <div class="flex flex-col md:flex-row-reverse justify-around items-center text-text text-left">
+                    <div class="p-12 md:w-1/2">
+                        <p class="font-clash text-base xl:text-lg text-center md:text-left">
+                            We provide <span class="font-clashbold">technical expertise</span> and product <span class="font-clashbold">consultancy</span> for:
+                        </p>
+                        <ul class="list-disc text-sm xl:text-md font-sans pt-6 md:pt-10">
+                            <li class="ml-4">Technical due diligence</li> 
+                            <li class="ml-4">Incubation labs</li> 
+                            <li class="ml-4">Product business strategy and business development</li>
+                        </ul>
+                    </div>
+                    <img src="./images/consultancy.png" class="w-1/2 md:w-1/3" />   
+                </div>
+                <div class="flex flex-col md:flex-row justify-around items-center text-text text-left">
+                    <div class="p-12 md:w-1/2">
+                        <p class="font-clash text-base xl:text-lg text-center md:text-left">
+                            We assist teams that are <span class="font-clashbold">already building </span> in:
+                        </p>
+                        <ul class="list-disc text-sm xl:text-md font-sans pt-6 md:pt-10">
+                            <li class="ml-4">Front end, backend and mobile development</li> 
+                            <li class="ml-4">Blockchain and smart contracts development</li> 
+                            <li class="ml-4">UX & UI design</li> 
+                            <li class="ml-4">Machine learning solutions</li>  
+                            <li class="ml-4">Product management Software deployment</li>
+                        </ul>
+                    </div>
+                    <img src="./images/assistance.png" class="w-1/2 md:w-1/3" />    
+                </div>
+                <div class="flex flex-col md:flex-row-reverse justify-around items-center text-text text-left">
+                    <div class="p-12 md:w-1/2">
+                        <p class="font-clash text-base xl:text-lg text-center md:text-left">
+                            We develop <span class="font-clashbold">end-to-end web3 products,</span> this includes:
+                        </p>
+                        <ul class="list-disc text-sm xl:text-md font-sans pt-6 md:pt-10">
+                            <li class="ml-4">R&D of complex systems</li> 
+                            <li class="ml-4">Concepts and prototypes</li> 
+                            <li class="ml-4">Product and solution design</li>  
+                            <li class="ml-4">PoC and MVP development</li> 
+                            <li class="ml-4">Software deployment</li>
+                        </ul>
+                    </div>
+                    <img src="./images/consultancy.png" class="w-1/2 md:w-1/3" />    
+                </div>
+            </div>
+        </section>
+
+        <section id="belief" class="bg-cover bg-no-repeat bg-center font-clash text-center text-white py-32 md:py-72" style="background-image: url('./images/bg-2.png');">
+            <h1 class="uppercase text-base md:text-md">our belief</h1>
+            <p class="text-base text-lg py-12 xl:w-1/3 mx-auto">Technology will not replace human experience, it will only mitigate its flaws. </p>
+        </section>
+
+        <section id="products" class="md:pb-32 pt-24">
+            <h1 class="font-clashbold text-lg lg:text-xl text-text text-center py-8 lg:py-12">Our Products</h1>
+                <div class="flex flex-col justify-around items-center lg:hidden">
+                    <div class="flex flex-col justify-around items-center pt-6">
+                        <img src="./images/dapps.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">dApps</p>
+                    </div>
+                    <div class="flex flex-col justify-around items-center pt-2">
+                        <img src="./images/games.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">Web3 & P2E games</p>
+                    </div>
+                    <div class="flex flex-col justify-around items-center pt-2">
+                        <img src="./images/Defi.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">DeFi</p>
+                    </div>
+                    <div class="flex flex-col justify-around items-center pt-2">
+                        <img src="./images/Infrastructure.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">Infrastructure projects</p>
+                    </div>
+                    <div class="flex flex-col justify-around items-center pt-2">
+                        <img src="./images/Metaverse.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">NFTs and metaverse</p>
+                    </div>
+                    <div class="flex flex-col justify-around items-center pt-2">
+                        <img src="./images/SDK.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">SDKs</p>
+                    </div>
+                </div>
+
+                <div class="hidden lg:grid lg:grid-cols-9 md:px-10">
+                    <div class="flex flex-col md:flex-row justify-start items-center md:col-span-3 md:col-start-3 pt-14">
+                        <img src="./images/dapps.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">dApps</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-start items-center col-span-3 col-start-6 pt-14">
+                        <img src="./images/games.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">Web3 & P2E games</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-start items-center col-span-3 col-start-3 pt-14">
+                        <img src="./images/Defi.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">DeFi</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-start items-center col-span-3 col-start-6 pt-14">
+                        <img src="./images/Infrastructure.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">Infrastructure projects</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-start items-center col-span-3 col-start-3 pt-14">
+                        <img src="./images/Metaverse.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">NFTs and metaverse</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-start items-center col-span-3 col-start-6 pt-14">
+                        <img src="./images/SDK.png" />
+                        <p class="font-clashbold text-base md:text-lg text-text p-4">SDKs</p>
+                    </div>
+                </div>
+        </section>
+        
+        <section id="who-are-we?" class="bg-cover bg-no-repeat bg-center font-clash text-center text-white py-32 md:py-96" style="background-image: url('./images/bg-3.png');">
+            <h1 class="uppercase text-base md:text-md">WHO ARE WE?</h1>
+            <p class="text-base text-lg py-12 md:w-5/6 lg:w-2/3 mx-auto">We are a team of industry experts, actively building the WEB3 project-by project. </p>
+        </section>
+
+        <section id="technologies" class="pt-24">
+            <h1 class="font-clashbold text-lg lg:text-xl text-text text-center py-8 md:py-12">Tech we use</h1>
+                <div class="flex flex-col lg:hidden justify-center items-baseline pb-4">
+                    <p class="font-clashbold text-base md:text-lg px-10 text-left">Frontend</p>
+                    <div class="flex flex-row justify-around items-baseline px-10">
+                        <p class="font-sans text-sm md:text-base pr-6">Next.js</p>
+                        <p class="font-sans text-sm md:text-base pr-6">React</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Angular</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:hidden justify-center items-baseline pb-4">
+                    <span class="font-clashbold text-base md:text-lg px-10 text-left">Backend</span>
+                    <div class="flex flex-row justify-around items-baseline px-10">
+                        <p class="font-sans text-sm md:text-base pr-6">NestJS</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Node.js</p>
+                        <p class="font-sans text-sm md:text-base pr-6">ASP.NET Core</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Python</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:hidden justify-center items-baseline pb-4">
+                    <span class="font-clashbold text-base md:text-lg px-10 text-left">Mobile</span>
+                    <div class="flex flex-row justify-around items-baseline px-10">
+                        <p class="font-sans text-sm md:text-base pr-6">iOS(Swift)</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Android(Kotlin)</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Kotlin Multiplatform</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Flutter</p>
+                        <p class="font-sans text-sm md:text-base pr-6">React Native</p>
+
+                    </div>
+                </div>
+                <div class="flex flex-col lg:hidden justify-center items-baseline pb-4">
+                    <span class="font-clashbold text-base md:text-lg px-10">Platforms</span>
+                    <div class="flex flex-row justify-start items-baseline px-10">
+                        <p class="font-sans text-sm md:text-base pr-6">AWS</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Azure</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:hidden justify-center items-baseline pb-4">
+                    <span class="font-clashbold text-base md:text-lg px-10">Smart contracts</span>
+                    <div class="flex flex-row justify-start items-baseline px-10">
+                        <p class="font-sans text-sm md:text-base pr-6">Rust</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Solidity</p>
+                        <p class="font-sans text-sm md:text-base pr-6">Move</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex flex-row justify-center items-start">
+                    <div class="flex flex-col justify-around items-start">
+                        <p class="font-clashbold text-base md:text-lg text-left">Frontend</p>
+                        <span class="font-clashbold text-base md:text-lg text-left">Backend</span>
+                        <span class="font-clashbold text-base md:text-lg text-left">Mobile</span>
+                        <span class="font-clashbold text-base md:text-lg text-left">Platforms</span>
+                        <span class="font-clashbold text-base md:text-lg text-left pr-2">Smart contracts</span>
+                    </div>
+                    <div class="flex flex-col justify-around items-start">
+                        <div class="flex flex-row justify-around items-start pt-4">
+                            <p class="font-sans text-sm md:text-base pr-6">Next.js</p>
+                            <p class="font-sans text-sm md:text-base pr-6">React</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Angular</p>
+                        </div>
+                        <div class="flex flex-row justify-around items-baseline pt-5">
+                            <p class="font-sans text-sm md:text-base pr-6">NestJS</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Node.js</p>
+                            <p class="font-sans text-sm md:text-base pr-6">ASP.NET Core</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Python</p>
+                        </div>
+                        <div class="flex flex-row justify-around items-baseline pt-5">
+                            <p class="font-sans text-sm md:text-base pr-6">iOS(Swift)</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Android(Kotlin)</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Kotlin Multiplatform</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Flutter</p>
+                            <p class="font-sans text-sm md:text-base pr-6">React Native</p>
+                        </div>
+                        <div class="flex flex-row justify-around items-baseline pt-5">
+                            <p class="font-sans text-sm md:text-base pr-6">AWS</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Azure</p>
+                        </div>
+                        <div class="flex flex-row justify-around items-baseline pt-5">
+                            <p class="font-sans text-sm md:text-base pr-6">Rust</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Solidity</p>
+                            <p class="font-sans text-sm md:text-base pr-6">Move</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="case-studies" class="lg:px-24 xl:px-44 pt-20">
+            <h1 class="font-clashbold text-lg lg:text-xl text-text text-center py-8 md:py-12">Case studies</h1>
+            <div class="flex flex-col md:flex-row md:flex-wrap justify-around md:justify-start items-center md:items-start py-12">
+                <div class="flex flex-col justify-between items-center  md:items-start text-center md:text-left pb-14 px-16 xl:w-1/3">
+                    <img src="./images/marketplace.png" class="w-48 xl:w-72" />
+                    <p class="font-clash text-base xl:text-md pt-8">Marketplace on NFT protocol</p>
+                    <p class="font-clashbold text-md xl:text-lg md:text-base">The Round's NFT marketplace</p>
+                    <ul class="list-none pt-2">
+                        <li class="uppercase font-clash text-sm xl:text-base">CLIENT FACING WEBSITE</li>
+                        <li class="uppercase font-clash text-sm xl:text-base">ADMIN DASHBOARD</li>
+                        <li class="uppercase font-clash text-sm xl:text-base">REST API</li>
+                        <li class="uppercase font-clash text-sm xl:text-base">SMART CONTRACTS</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-between items-center  md:items-start text-center md:text-left pb-14 px-16 xl:w-1/3">
+                    <img src="./images/integration.png" class="w-48 xl:w-72" />
+                    <p class="font-clash text-base xl:text-md pt-8">Near Smart Contracts</p>
+                    <p class="font-clashbold text-md xl:text-lg md:text-base">Axelar network integration</p>
+                    <ul class="list-none pt-2">
+                        <li class="uppercase font-clash text-sm xl:text-base">INTEGRATION OF SMART CONTRACTS</li>
+                        <li class="uppercase font-clash text-sm xl:text-base">CROSS CHAIN INTERACTION</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-between items-center md:items-start text-center md:text-left pb-14 px-16 xl:w-1/3">
+                    <img src="./images/ggquest.png" class="w-48 xl:w-72" />
+                    <p class="font-clash text-base xl:text-md pt-8">Near Smart Contracts</p>
+                    <p class="font-clashbold text-md xl:text-lg md:text-base">Gg quest integration</p>
+                    <ul class="list-none pt-2">
+                        <li class="uppercase font-clash text-sm xl:text-base">INTEGRATION OF SMART CONTRACTS</li>
+                        <li class="uppercase font-clash text-sm xl:text-base">SOULBOUND NFTS</li>
+                        <li class="uppercase font-clash text-sm xl:text-base">reputation management</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-between items-center  md:items-start text-center md:text-left pb-14 px-16 xl:w-1/3">
+                    <img src="./images/dev3.png" class="w-48 xl:w-72" />
+                    <p class="font-clash text-base xl:text-md pt-8">Near Smart Contracts</p>
+                    <p class="font-clashbold text-md xl:text-lg md:text-base">DEV3 Near Flavor</p>
+                    <ul class="list-none pt-2">
+                        <li class="uppercase font-clash text-sm xl:text-base">FULL STACK DEVELOPMENT</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-between items-center md:items-start text-center lg:text-left pb-14 px-16 xl:w-1/3">
+                    <img src="./images/outsiders.png" class="w-48 xl:w-72" />
+                    <p class="font-clash text-base xl:text-md pt-8">Near Smart Contracts</p>
+                    <p class="font-clashbold text-md xl:text-lg md:text-base">The Outsiders NFT drop</p>
+                    <ul class="list-none pt-2">
+                        <li class="uppercase font-clash text-sm xl:text-base">COLLECTABLE NFT WITH REward mechanism</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="industries" class="bg-cover bg-no-repeat bg-center font-clash text-center text-white py-32 md:py-96" style="background-image: url('./images/bg-4.png');">
+            <h1 class="font-clashbold text-lg lg:text-xl text-white text-center">Industries that we work with</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center md:items-start pt-14">
+                <ul class="list-none font-sans text-base md:text-md text-left md:pr-24">
+                    <li>Artificial Intelligence (AI)</li>
+                    <li>Enterprise</li>
+                    <li>Fintech</li>
+                    <li>Education & e-learning</li>
+                    <li>Healthcare</li>
+                    <li>Retail & e-commerce</li>
+                </ul>
+                <ul class="list-none font-sans text-base md:text-md text-left">
+                    <li>Realestate</li>
+                    <li>Logistic & transportation</li>
+                    <li>Travel</li>
+                    <li>Manufacturing</li>
+                    <li>Public services</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="collab" class="bg-white px-6 lg:px-32">
+            <h1 class="font-clashbold text-lg lg:text-xl text-text text-center pt-14">Choose the way you wish to collaborate with us</h1>
+            <div class="flex flex-col justify-around items-center pt-14">
+                <div class="flex flex-col md:flex-row justify-around items-center text-text text-left">
+                    <div class="p-12 md:w-1/2">
+                        <h1 class="font-clashbold text-lg xl:text-xl text-text">Team+model</h1>
+                        <p class="font-clash text-base xl:text-lg">a 4pt.0 addition to your regular team</p>
+                        <p class="font-sans text-sm xl:text-base pt-6">Outsource parts of your project or your entire project to the best technical talent, in order to avoid costly and time consuming hiring processes. This model enables clients to integrate our top engineers into their existing teams while keeping full control over ownership, direction, infrastructure and KPIs.</p>
+                        <p class="font-clashbold text-sm xl:text-base pt-6 uppercase">Benefits for clients</p>
+                        <ul class="list-disc font-sans text-sm xl:text-base">
+                            <li class="ml-4">Keep your full time staffing in check </li> 
+                            <li class="ml-4">Ramp up your technical team </li> 
+                            <li class="ml-4">Service and time based, easy task management </li> 
+                            <li class="ml-4">Focus on what you do best while we handle development</li>  
+                        </ul>
+                    </div>
+                    <img src="./images/Team+.png" class="w-1/2 md:w-1/3" />   
+                </div>
+                <div class="flex flex-col justify-around items-center pt-14">
+                    <div class="flex flex-col md:flex-row-reverse justify-around items-center text-text text-left">
+                        <div class="p-12 md:w-1/2">
+                            <h1 class="font-clashbold text-lg xl:text-xl text-text">A to Z model</h1>
+                            <p class="font-clash text-base xl:text-lg">We take your vision and transform it to a real product</p>
+                            <p class="font-sans text-sm xl:text-base pt-6">You own the business vision, while we take on the project ownership. With this model, the 4pt.o team would handle the entire cycle of product development from concept to delivery.</p>
+                            <p class="font-clashbold text-sm xl:text-base pt-6 uppercase">Benefits for clients</p>
+                            <ul class="list-disc font-sans text-sm xl:text-base">
+                                <li class="ml-4">No management overhead costs </li> 
+                                <li class="ml-4">More cost effective for smaller teams in the long run  </li> 
+                                <li class="ml-4">Leverage in case of larger projects </li> 
+                                <li class="ml-4">Shared risk</li>  
+                            </ul>
+                        </div>
+                        <img src="./images/AZ-model.png" class="w-1/2 md:w-1/3" />   
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-around items-center text-text text-left">
+                        <div class="p-12 md:w-1/2">
+                            <h1 class="font-clashbold text-lg xl:text-xl text-text">Hybrid model</h1>
+                            <p class="font-clash text-base xl:text-lg">We join forces with you and help where needed</p>
+                            <p class="font-sans text-sm xl:text-base pt-6">Project ownership & technical team is composed of both 4pt.o and client staff. This model combines the lean staffing advantages of the team+ model with the delegated ownership advantages of the A to Z model to offer flexibility suitable for larger projects. It is usually when additional effort is required on multiple product development fronts that we assign several teams to join the client’s core teams.</p>
+                            <p class="font-clashbold text-sm xl:text-base pt-6 uppercase">Benefits for clients</p>
+                            <ul class="list-disc font-sans text-sm xl:text-base">
+                                <li class="ml-4">Leverages your existent technical team</li> 
+                                <li class="ml-4">No need for clients to create further organizational structures</li> 
+                            </ul>
+                        </div>
+                        <img src="./images/Hybrid-model.png" class="w-1/2 md:w-1/3" />   
+                    </div>
+            </div>
+        </section>
+
+        <section id="partners" class="px-0 pt-24">
+            <h1 class="font-clashbold text-lg lg:text-xl text-text text-center py-16">Partners</h1>
+
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/Blizzard.png" />
+                <img src="./images/nansen.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/rpm.png" />
+                <img src="./images/rzlt.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/dev3logo.png" />
+                <img src="./images/ggqlogo.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/pagoda.png" />
+                <img src="./images/solsea.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/calimero.png" />
+                <img src="./images/ampnet.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/aelogo.png" />
+                <img src="./images/intel.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/dnzlogo.png" />
+                <img src="./images/axelar.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/zumer.png" />
+                <img src="./images/theround.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/chainstaqck.png" />
+                <img src="./images/recheck.png" />
+            </div>
+            <div class="p-0 flex flex-row md:hidden">
+                <img src="./images/nearbalkans.png" />
+                <img src="" />
+            </div>
+
+            <div class="hidden px-0 w-full md:flex flex-row flex-no-wrap">
+                <div class="w-80 bg-text shrink"></div>
+                <img src="./images/Blizzard.png" class="md:w-44 lg:w-64" />
+                <img src="./images/nansen.png"  class="md:w-44 lg:w-64" />
+                <img src="./images/rpm.png" class="md:w-44 lg:w-64" />
+                <img src="./images/intel.png" class="md:w-44 lg:w-64" />
+                <div class="w-80 bg-white shrink"></div>
+            </div>
+            <div class="hidden px-0 w-full md:flex flex-row flex-no-wrap">
+                <div class="w-80 bg-text"></div>
+                <img src="./images/rzlt.png" class="md:w-44 lg:w-64" />
+                <img src="./images/dev3logo.png" class="md:w-44 lg:w-64" />
+                <img src="./images/ggqlogo.png"  class="md:w-44 lg:w-64"/>
+                <img src="./images/aelogo.png" class="md:w-44 lg:w-64" />
+                <div class="w-80 bg-white"></div>
+            </div><div class="hidden px-0 w-full md:flex flex-row flex-no-wrap">
+                <div class="w-80 bg-text"></div>
+                <img src="./images/pagoda.png" class="md:w-44 lg:w-64" />
+                <img src="./images/solsea.png" class="md:w-44 lg:w-64" />
+                <img src="./images/dnzlogo.png" class="md:w-44 lg:w-64" />
+                <img src="./images/axelar.png" class="md:w-44 lg:w-64" />
+                <div class="w-80 bg-white"></div>
+            </div><div class="hidden px-0 w-full md:flex flex-row flex-no-wrap">
+                <div class="w-80 bg-text"></div>
+                <img src="./images/calimero.png" class="md:w-44 lg:w-64" />
+                <img src="./images/ampnet.png" class="md:w-44 lg:w-64" />
+                <img src="./images/zumer.png" class="md:w-44 lg:w-64" />
+                <img src="./images/theround.png" class="md:w-44 lg:w-64" />
+                <div class="w-80 bg-white"></div>
+            </div><div class="hidden px-0 w-full md:flex flex-row flex-no-wrap">
+                <div class="w-80 bg-white"></div>
+                <img src="./images/nearbalkans.png" class="md:w-44 lg:w-64" />
+                <img src="./images/recheck.png" class="md:w-44 lg:w-64" />
+                <img src="./images/chainstaqck.png"  class="md:w-44 lg:w-64"/>
+                <div class="w-80 bg-white"></div>
+            </div>
+
+            <h1 class="font-clashbold text-lg lg:text-xl text-text text-center pt-32 pb-12 px-6 lg:px-32">We are ready for the next big challenge, are you?</h1>     
+        </section>
+
+        <footer class="w-screen bg-cover bg-no-repeat px-16 lg:px-64 py-44" style="background-image: url('./images/bg-footer.png');">
+            <div class="flex flex-row justify-around items-start pt-32">
+                <img src="./images/logo.png" class="w-20 md:w-32" />
+                <div class="md:flex flex-row justify-between items-baseline">
+                    <p class="font-clashbold text-md md:text-lg text-white pr-12">
+                        Contact us
+                    </p>
+                    <div class="flex flex-col">
+                        <a href="mailto:hi@4pto.io" class="text-white font-sans text-base md:text-md underline">hi@4pto.io</a>
+                        <a href="http://www.4pto.io/" target="_blank" rel="noopener" class="text-white font-sans text-base md:text-md underline">www.4pto.io</a>
+                        <a href="https://www.linkedin.com/company/4pto/" rel="noopener" target="_blank" class="text-white font-sans text-base md:text-md underline">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script>
+    var mobileMenuButton = document.getElementById("mobileMenuButton");
+    mobileMenuButton.onclick = function() {
+            document.getElementById("sideMenuHideOnMobile").classList.toggle("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.toggle("mt-20");
+            document.getElementById("sideMenuHideOnMobile").classList.toggle("shadow");
+            document.getElementById("mobileMenuButtonClose").classList.toggle("hidden");
+            document.getElementById("mobileMenuButtonOpen").classList.toggle("hidden");
+        }
+        // Hide element when click outside nav
+    var theElementContainer = document.getElementsByTagName("nav")[0];
+    document.addEventListener('click', function(event) {
+        if (!theElementContainer.contains(event.target)) {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-20");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        }
+    });
+         // Hide element when click on link
+    var menuLinks = document.querySelectorAll("a.navlink");
+    menuLinks.forEach((e, i) => {
+        e.addEventListener('click', () => {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-20");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        });
+    });
+    
+</script>
+
+<script>
+    var navColor = document.getElementById('navWrapper');
+    window.onscroll = function () {
+        if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300 ) {
+            document.getElementById('navWrapper').classList.add("animate-text");
+            document.getElementById('navWrapper').classList.add("bg-black");
+            document.getElementById('navWrapper').classList.remove("bg-transparent");
+        }
+        else {
+            document.getElementById('navWrapper').classList.add("bg-transparent");
+            document.getElementById('navWrapper').classList.remove("bg-black");
+        } 
+
+    };
+</script>
+
+</html>
